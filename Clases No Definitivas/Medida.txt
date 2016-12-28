@@ -1,0 +1,10 @@
+Medida
+
+Id Entero, consultable y modificable
+Feccha FechaHora,consultable y modificable
+Valor Real, consultable y modificable
+Confirmada boolean, consultable y modificable
+Id_Magnitud Entero, consultable y modificable
+Id_Estacion Entero, consultable y modificable
+Id_Alumno Entero, consultable y modificable
+Id_Grupo Entero, consultable y modificable

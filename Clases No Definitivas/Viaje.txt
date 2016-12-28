@@ -1,0 +1,8 @@
+Viaje
+
+Id Entero, consultable y modificable
+Fecha_Inicio fechaHora,consultable y modificable
+Fecha_Fin fechaHora,consultable y modificable
+Tipo cadena,consultable y modificable
+Denominación Cadena,consultable y modificable
+Notas Cadenalarga, consultable y modificable

@@ -1,0 +1,7 @@
+Magnitud
+
+Id Entero, consultable y modificable
+Nombre cadena,consultable y modificable
+Unidad cadena,consultable y modificable
+Val_Max real,consultable y modificable
+Val_Min real,consultable y modificable

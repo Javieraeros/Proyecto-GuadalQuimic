@@ -1,0 +1,7 @@
+Profesor
+
+Id Entero,consultable y modificable
+Nombre Cadena, consultable y modificable
+Apellidos Cadena, consultable y modificable
+Contraseña Cadena, consultable y modificable(mínimo 5 caracteres y con números)
+

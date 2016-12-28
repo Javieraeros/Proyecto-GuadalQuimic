@@ -1,0 +1,6 @@
+Estacion
+
+Id Entero, consultable y modificable
+Nombre cadena,consultable y modificable
+Latitud ¿cadena?,consultable y modificable
+Longitud ¿cadena?,consultable y modificable

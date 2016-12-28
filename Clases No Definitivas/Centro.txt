@@ -1,0 +1,5 @@
+Centro
+
+Id entero,consultable y modificable
+Nombre cadena, consultable y modificable
+Localización cadena,consultable y modificable

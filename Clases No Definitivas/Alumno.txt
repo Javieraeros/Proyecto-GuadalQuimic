@@ -1,0 +1,6 @@
+Alumno
+
+Id Entero, consultable y modificable
+Nombre cadena, consultable y modificable
+Apellido cadena,consultable y modificable
+Contraseña cadena, consultable y modificable (mínimo 5 caracteres y con números)

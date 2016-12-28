@@ -1,0 +1,7 @@
+Grupo
+
+Id Entero, Consultable y modificable
+Nombre Cadena, consultable y modificable
+Cantidad_Alumnos Entero, consultable y modificable
+Id_Viaje Entero, consultable y modificable
+Id_Centro Entero, consultable y modificable

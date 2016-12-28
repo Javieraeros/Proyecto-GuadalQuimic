@@ -1,0 +1,6 @@
+ProfesorCentro
+
+Id_Profesor Entero,consultable y modificable
+Id_Centro Entero,consultable y modificable
+Fecha_Alta fecha,consultable y modificable
+Fecha_Baja fecha,consultable y modificable
