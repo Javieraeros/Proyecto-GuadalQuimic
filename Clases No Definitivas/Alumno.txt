@@ -1,6 +1,8 @@
 Alumno
-
+(Preguntar a Leo sobre el atributo de la relación autorizado)
 Id Entero, consultable y modificable
 Nombre cadena, consultable y modificable
 Apellido cadena,consultable y modificable
+Correo cadena,consultable y modificable (validar)
 Contraseña cadena, consultable y modificable (mínimo 5 caracteres y con números)
+Grupos Grupo[],consultable y modificable

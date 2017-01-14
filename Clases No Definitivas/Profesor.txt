@@ -1,7 +1,9 @@
 Profesor
-
+(Preguntar a Leo sobre como poner las fechas de la tabla de relación)
 Id Entero,consultable y modificable
 Nombre Cadena, consultable y modificable
 Apellidos Cadena, consultable y modificable
 Contraseña Cadena, consultable y modificable(mínimo 5 caracteres y con números)
-
+Viajes Viaje[],consultable y modificable
+Centros Centro[],consultable y modificable 
+Grupos Grupo[],consultable y modificable

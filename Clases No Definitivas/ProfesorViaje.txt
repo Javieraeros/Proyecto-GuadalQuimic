@@ -1,4 +1,0 @@
-ProfesorViaje
-
-Id_Profesor Entero,consultable y modificable
-Id_Viaje Entero,consultable y modificable

@@ -6,3 +6,4 @@ Fecha_Fin fechaHora,consultable y modificable
 Tipo cadena,consultable y modificable
 Denominación Cadena,consultable y modificable
 Notas Cadenalarga, consultable y modificable
+Profesores Profesor[],consultable y modificable

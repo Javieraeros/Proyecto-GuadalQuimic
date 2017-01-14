@@ -1,4 +1,0 @@
-ProfesorGrupo
-
-Id_Profesor Entero,consultable y modificable
-Id_Grupo Entero,consultable y modificable

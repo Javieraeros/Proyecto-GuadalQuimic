@@ -1,10 +1,11 @@
 Medida
 
 Id Entero, consultable y modificable
-Feccha FechaHora,consultable y modificable
+Fecha FechaHora,consultable y modificable
+FechaModificabilidadMaxima FechaHora,consultable y modificable
 Valor Real, consultable y modificable
 Confirmada boolean, consultable y modificable
-Id_Magnitud Entero, consultable y modificable
-Id_Estacion Entero, consultable y modificable
-Id_Alumno Entero, consultable y modificable
-Id_Grupo Entero, consultable y modificable
+Magnitud Magnitud, consultable y modificable
+Estacion Estacion, consultable y modificable
+Alumno Alumno, consultable y modificable
+Grupo Grupo, consultable y modificable
