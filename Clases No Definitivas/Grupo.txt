@@ -2,7 +2,6 @@ Grupo
 
 Id Entero, Consultable y modificable
 Nombre Cadena, consultable y modificable
-Cantidad_Alumnos Entero, consultable y modificable
 Viaje Viaje, consultable y modificable
 Centro Centro, consultable y modificable
 Profesores Profesor[],consultable y modificable
