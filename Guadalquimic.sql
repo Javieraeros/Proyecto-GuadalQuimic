@@ -15,6 +15,7 @@ Create table Profesores(
 Id_Profesor int identity(1,1),    --Usar autoincrement?
 Nombre nvarchar(30) not null,
 Apellidos nvarchar(30) not null,
+Correo nvarchar(40) not null,   --Comprobar correo válido
 Contraseña nvarchar(60) not null
 )
 
@@ -51,11 +52,16 @@ Nombre nvarchar(20)
 )
 
 Create table Profesores_Grupos(
-Id int identity(1,1),  
+Id_Profesor int,  
+Id_Grupo int
 )
 
 Create table Alumnos(
-Id int identity(1,1),  
+Id int identity(1,1),
+Nombre
+Apellidos
+Correo
+Contraseña  
 )
 
 Create table Alumnos_Grupos(
