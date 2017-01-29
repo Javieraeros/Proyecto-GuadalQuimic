@@ -1,0 +1,22 @@
+<Page
+    x:Class="Guadalquimic.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Guadalquimic"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="300" Margin="10">
+            <TextBox  BorderBrush="LightGray" Name="txtUsuario" PlaceholderText="Usuario" FontSize="30" Margin="10"/>
+            <PasswordBox BorderBrush="LightGray" Name="txtPassWord" PlaceholderText="Contraseña" FontSize="30" Margin="10"/>
+            <Button Content="Login" Name="Login" HorizontalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Page>
