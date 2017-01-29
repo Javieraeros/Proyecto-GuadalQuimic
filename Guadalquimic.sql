@@ -13,23 +13,23 @@ go
 Use Guadalquimic
 
 Create table Profesores(
-Id int identity(1,1),    --Usar autoincrement?
+Id int identity(1,1),    
 Nombre nvarchar(25) not null,
 Apellidos nvarchar(30) not null,
-Correo nvarchar(40) unique not null,   --Comprobar correo válido
+Correo nvarchar(40) unique not null,  
 Contraseña nvarchar(255) not null
 )
 
 Create table Centros(
 Id int identity(1,1),
 Nombre nvarchar(50) not null,
-Localizacion nvarchar(100)
+Localizacion nvarchar(100) null
 )
 
 Create table Profesores_Centros(
 Id_Profesor int not null,
 Id_Centro int not null,
-Fecha_Alta date not null,
+Fecha_Alta date null,
 Fecha_Baja date null   --Comprobar posterioridad
 )
 
@@ -63,8 +63,10 @@ Create table Alumnos(
 Id int identity(1,1),
 Nombre nvarchar(25) not null,
 Apellidos nvarchar(30) not null,
+Alias nvarchar(30) unique not null,
+Contraseña nvarchar(255) not null,
 Correo nvarchar(40) unique not null,
-Contraseña nvarchar(255) not null
+Curso nvarchar(20) null
 )
 
 Create table Alumnos_Grupos(
@@ -137,7 +139,42 @@ go
 
 --Restricciones
 
---Datos
-
-
+Alter table Profesores add constraint CK_CorreoProfesor check (Correo like '%@%.%')
+Alter table Alumnos add constraint CK_CorreoAlumno check (Correo like '%@%.%')
+go
 --Programación
+
+Create Trigger FechaValidaProfesores on Profesores_Centros after update,insert as 
+declare @FechaAlta datetime, @FechaBaja datetime
+Select @FechaAlta=Fecha_Alta from inserted
+Select @FechaBaja=Fecha_Baja from inserted
+If @FechaAlta>@FechaBaja
+rollback
+go
+
+Create Trigger FechaValidaViajes on Viajes after update,insert as 
+declare @FechaInicio datetime, @FechaFin datetime
+Select @FechaInicio=Fecha_Inicio from inserted
+Select @FechaFin=Fecha_Fin from inserted
+If @FechaInicio>@FechaFin
+rollback
+go
+
+Create Trigger FechaValidaMedidas on Medidas after update,insert as 
+declare @Fecha datetime, @FechaModificabilidad datetime
+Select @Fecha=Fecha from inserted
+Select @FechaModificabilidad=Fecha_Modificabilidad from inserted
+If @Fecha>@FechaModificabilidad
+rollback
+go
+
+Create Trigger MagnitudesVálidas on Magnitudes after update,insert as 
+declare @Min real, @Max real
+Select @Min=Val_Min from inserted
+Select @Max=Val_Max from inserted
+If @Min>@Max
+rollback
+go
+
+
+--Datos
