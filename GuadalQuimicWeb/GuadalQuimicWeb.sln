@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B9919FD-C175-4887-A19C-D8ED65497454}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B6B0548-016F-41D9-9BAD-AF7B0D8B9C84}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GuadalQuimicWeb", "src\GuadalQuimicWeb\GuadalQuimicWeb.xproj", "{CF209D7D-6EAE-4E49-96C9-0922A2B11909}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF209D7D-6EAE-4E49-96C9-0922A2B11909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF209D7D-6EAE-4E49-96C9-0922A2B11909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF209D7D-6EAE-4E49-96C9-0922A2B11909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF209D7D-6EAE-4E49-96C9-0922A2B11909}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF209D7D-6EAE-4E49-96C9-0922A2B11909} = {3B9919FD-C175-4887-A19C-D8ED65497454}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+
+<body>
+    @using (Html.BeginForm())
+    {
+    <h2>Index</h2>
+
+    <form action="~/Controllers/HomeController" method="post">
+        <p>Email/Alias</p><br />
+        <input type="text" name="correo" /> <br />
+        <p>Contraseña</p><br />
+        <input type="text" name="contraseña" /> <br /><br />
+
+        <input type="submit" value="Log in" name="btnIndex" />
+        <input type="submit" value="Sign up" name="btnIndex" />
+    </form>
+    }
+
+
+</body>
+
+</html>
+
+
