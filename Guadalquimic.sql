@@ -22,7 +22,7 @@ Contraseña nvarchar(255) not null
 
 Create table Centros(
 Id int identity(1,1),
-Nombre nvarchar(50) not null,
+Nombre nvarchar(50) unique not null,
 Localizacion nvarchar(100) null
 )
 
