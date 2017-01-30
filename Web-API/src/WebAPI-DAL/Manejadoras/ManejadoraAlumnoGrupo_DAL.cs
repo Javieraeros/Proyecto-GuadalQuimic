@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebAPI_DAL
+namespace WebAPI_DAL.Listados
 {
-    public class Class1
+    public class ManejadoraAlumnoGrupo_DAL
     {
-        public Class1()
-        {
-        }
     }
 }
