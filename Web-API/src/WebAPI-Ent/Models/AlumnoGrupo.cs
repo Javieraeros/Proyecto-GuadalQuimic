@@ -42,7 +42,7 @@ namespace WebAPI_Ent.Models
             }
         }
 
-        public int Id_Grupo1
+        public int Id_Grupo
         {
             get
             {

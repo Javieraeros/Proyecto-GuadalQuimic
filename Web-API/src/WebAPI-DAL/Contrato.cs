@@ -9,114 +9,114 @@ namespace WebAPI_DAL
     {
         public static class Alumno
         {
-            public static string TABLA= "Alumnos";
-            public static string ID= "Id";
-            public static string NOMBRE= "Nombre";
-            public static string APELLIDOS= "Apellidos";
-            public static string CONTRASEÑA= "Contraseña";
-            public static string ALIAS= "Alias";
-            public static string CORREO= "Correo";
-            public static string CURSO= "Curso";
+            public const string TABLA= "Alumnos";
+            public const string ID= "Id";
+            public const string NOMBRE= "Nombre";
+            public const string APELLIDOS= "Apellidos";
+            public const string CONTRASEÑA= "Contraseña";
+            public const string ALIAS= "Alias";
+            public const string CORREO= "Correo";
+            public const string CURSO= "Curso";
         }
         public static class AlumnoGrupo
         {
-            public static string TABLA= "Alumnos_Grupos";
-            public static string ID_ALUMNO= "Id_Alumno";
-            public static string ID_GRUPO= "Id_Grupo";
+            public const string TABLA= "Alumnos_Grupos";
+            public const string ID_ALUMNO= "Id_Alumno";
+            public const string ID_GRUPO= "Id_Grupo";
         }
         public static class Centro
         {
-            public static string TABLA= "Centros";
-            public static string ID= "Id";
-            public static string NOMBRE= "Nombre";
-            public static string LOCALIZACION= "Localizacion";
+            public const string TABLA= "Centros";
+            public const string ID= "Id";
+            public const string NOMBRE= "Nombre";
+            public const string LOCALIZACION= "Localizacion";
 
         }
         public static class Estacion
         {
-            public static string TABLA= "Estaciones";
-            public static string ID= "Id";
-            public static string NOMBRE= "Nombre";
-            public static string LONGITUD= "Longitud";
-            public static string LATITUD= "Latitud";
+            public const string TABLA= "Estaciones";
+            public const string ID= "Id";
+            public const string NOMBRE= "Nombre";
+            public const string LONGITUD= "Longitud";
+            public const string LATITUD= "Latitud";
 
         }
         public static class Grupo
         {
-            public static string TABLA= "Grupos";
-            public static string ID= "Id";
-            public static string ID_VIAJE= "Id_Viaje";
-            public static string ID_CENTRO= "Id_Centro";
-            public static string NOMBRE= "Nombre";
+            public const string TABLA= "Grupos";
+            public const string ID= "Id";
+            public const string ID_VIAJE= "Id_Viaje";
+            public const string ID_CENTRO= "Id_Centro";
+            public const string NOMBRE= "Nombre";
 
         }
         public static class Magnitud
         {
-            public static string TABLA="Magnitudes";
-            public static string ID="Id";
-            public static string NOMBRE="Nombre";
-            public static string UNIDAD="Unidad";
-            public static string VALMAX="Val_Max";
-            public static string VALMIN="Val_Min";
+            public const string TABLA="Magnitudes";
+            public const string ID="Id";
+            public const string NOMBRE="Nombre";
+            public const string UNIDAD="Unidad";
+            public const string VALMAX="Val_Max";
+            public const string VALMIN="Val_Min";
         }
         public static class Medida
         {
-            public static string TABLA="Medidas";
-            public static string ID_GRUPO="Id_Grupo";
-            public static string ID_ALUMNO="Id_Alumno";
-            public static string ID_ESTACION="Id_Estacion";
-            public static string ID_MAGNITUD="Id_Magnitud";
-            public static string FECHA="Fecha";
-            public static string FECHA_MODIFICABILIDAD="Fecha_Modificabilidad";
-            public static string VALOR="Valor";
-            public static string CONFIRMADA="Confirmada";
+            public const string TABLA="Medidas";
+            public const string ID_GRUPO="Id_Grupo";
+            public const string ID_ALUMNO="Id_Alumno";
+            public const string ID_ESTACION="Id_Estacion";
+            public const string ID_MAGNITUD="Id_Magnitud";
+            public const string FECHA="Fecha";
+            public const string FECHA_MODIFICABILIDAD="Fecha_Modificabilidad";
+            public const string VALOR="Valor";
+            public const string CONFIRMADA="Confirmada";
         }
         public static class Profesor
         {
-            public static string ID="Id";
-            public static string NOMBRE="Nombre";
-            public static string APELLIDOS="Apellidos";
-            public static string CORREO="Correo";
-            public static string CONTRASEÑA="Contraseña";
-            public static string TABLA="Profesores";
+            public const string ID="Id";
+            public const string NOMBRE="Nombre";
+            public const string APELLIDOS="Apellidos";
+            public const string CORREO="Correo";
+            public const string CONTRASEÑA="Contraseña";
+            public const string TABLA="Profesores";
 
         }
 
         public static class ProfesorCentro
         {
-            public static string TABLA="Profesores_Centros";
-            public static string ID_PROFESOR="Id_Profesor";
-            public static string ID_CENTRO="Id_Centro";
-            public static string FECHA_ALTA="Fecha_Alta";
-            public static string FECHA_BAJA="Fecha_Baja";
+            public const string TABLA="Profesores_Centros";
+            public const string ID_PROFESOR="Id_Profesor";
+            public const string ID_CENTRO="Id_Centro";
+            public const string FECHA_ALTA="Fecha_Alta";
+            public const string FECHA_BAJA="Fecha_Baja";
 
         }
 
         public static class ProfesorGrupo
         {
-            public static string TABLA="Profesores_Grupos";
-            public static string ID_PROFESOR="Id_Profesor";
-            public static string ID_GRUPO="Id_Grupo";
+            public const string TABLA="Profesores_Grupos";
+            public const string ID_PROFESOR="Id_Profesor";
+            public const string ID_GRUPO="Id_Grupo";
 
         }
 
         public static class ProfesorViaje
         {
-            public static string TABLA="Profesores_Viajes";
-            public static string ID_PROFESOR="Id_Profesor";
-            public static string ID_VIAJE="Id_Viaje";
+            public const string TABLA="Profesores_Viajes";
+            public const string ID_PROFESOR="Id_Profesor";
+            public const string ID_VIAJE="Id_Viaje";
 
         }
 
         public static class Viaje
         {
-            public static string TABLA="Viajes";
-            public static string ID="Id";
-            public static string INICIO="Fecha_Inicio";
-            public static string FIN="Fecha_Fin";
-            public static string TIPO="Tipo";
-            public static string DENOMINACION="Denominacion";
-            public static string NOTAS="Notas";
+            public const string TABLA="Viajes";
+            public const string ID="Id";
+            public const string INICIO="Fecha_Inicio";
+            public const string FIN="Fecha_Fin";
+            public const string TIPO="Tipo";
+            public const string DENOMINACION="Denominacion";
+            public const string NOTAS="Notas";
 
         }
     }

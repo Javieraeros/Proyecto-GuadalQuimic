@@ -20,20 +20,20 @@ if not exists(Select * from sys.database_principals where name='AlumnoGuadalquim
 Begin
 CREATE USER AlumnoGuadalquimic FOR LOGIN AlumnoGuadalquimic;
 End
-Grant Select to AlumnoGuadalquimic;
-Grant Insert,Update,Delete on Alumnos to AlumnoGuadalquimic;
-Grant Insert,Update,Delete on Alumnos_Grupos to AlumnoGuadalquimic;
-Grant Insert,Update,Delete on Medidas to AlumnoGuadalquimic;
-Grant Insert,Update,Delete on Grupos to AlumnoGuadalquimic;
-GO  
 
 
 if not exists(Select * from sys.database_principals where name='ProfesorGuadalquimic')
 Begin
 CREATE USER ProfesorGuadalquimic FOR LOGIN ProfesorGuadalquimic;
 End 
-Grant Insert,Update,Delete to ProfesorGuadalquimic; 
-GO  
 
 
 --Permisos
+
+Grant Select to AlumnoGuadalquimic;
+Grant Insert,Update,Delete on Alumnos to AlumnoGuadalquimic;
+Grant Insert,Update,Delete on Alumnos_Grupos to AlumnoGuadalquimic;
+Grant Insert,Update,Delete on Medidas to AlumnoGuadalquimic;
+Grant Insert,Update,Delete on Grupos to AlumnoGuadalquimic;
+Grant Select,Insert,Update,Delete to ProfesorGuadalquimic; 
+GO  
