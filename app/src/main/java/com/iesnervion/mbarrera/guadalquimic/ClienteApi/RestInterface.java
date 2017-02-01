@@ -1,6 +1,6 @@
 package com.iesnervion.mbarrera.guadalquimic.ClienteApi;
 
-import com.iesnervion.mbarrera.guadalquimic.Model.Alumno;
+import com.iesnervion.mbarrera.guadalquimic.Models.Alumno;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,6 +12,6 @@ import retrofit2.http.Header;
 
 public interface RestInterface {
 
-    @GET("alumno")
+    @GET("login")
     Call<Alumno> getLogin(@Header("Authorization") String auth);
 }
